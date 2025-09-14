@@ -1,0 +1,15 @@
+.info {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff3e0;
+}
+.info h2 {
+    margin-bottom: 1rem;
+    color: #e65100;
+}
+.info ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
