@@ -22,7 +22,7 @@ jobs:
       - name: Check Image Created Correctly
         run: docker images
       - name: Run Docker Container Locally from the created Image
-        run: docker run -p 3333:80 -d --name container@runner  kpkadvantures:1.0
+        run: docker run -p 3333:80 -d --name container@runner  zsaing/kpkadvantures:1.0
       - name: Check Running Containers
         run: docmer ps 
       - name: Now Push Docker Image onto the Dockerhub
