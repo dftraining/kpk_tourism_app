@@ -1,0 +1,15 @@
+{
+  "name": "14-sep-25-staic-app-single-continer",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "parcel build ./src/index.html --dist-dir ./dist-dir --public-url ./",
+    "test": "echo \"Custom Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
