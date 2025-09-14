@@ -1,0 +1,16 @@
+name: wf-cd-develop
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy-job-develop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploying To Render
+        run: echo "Get Ready.. We Are Deploying Your Dokcer Container On Render"
+      - name: Deploying On Render
+        run: |
+          curl -X POST "${{secrets.DEPLOY_HOOK_KPK_ADVENTURES}}"
+        #   -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+        #   -H "Accept: application/json"
