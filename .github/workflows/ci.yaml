@@ -24,11 +24,11 @@ jobs:
       - name: Run Docker Container Locally from the created Image
         run: docker run -p 3333:80 -d --name container_runner  zsaing/kpkadvantures:1.0
       - name: Check Running Containers
-        run: docmer ps 
+        run: docker ps 
       - name: Now Push Docker Image onto the Dockerhub
         run: docker push zsaing/kpkadvantures:1.0
       - name: Do the Termination House Keeping At Runner
         run: |
-          docker rm zsaing/kpkadvantures:1.0
+          docker rm container_runner
           docker rmi zsaing/kpkadvantures:1.0
           echo "Image And Container Deleted Successfuly"
