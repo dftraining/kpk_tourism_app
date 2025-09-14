@@ -11,6 +11,4 @@ jobs:
         run: echo "Get Ready.. We Are Deploying Your Dokcer Container On Render"
       - name: Deploying On Render
         run: |
-          curl -X POST "${{secrets.DEPLOY_HOOK_KPK_ADVENTURES}}"
-        #   -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
-        #   -H "Accept: application/json"
+          curl -X POST "${{secrets.DEPLOY_HOOK_KPK_ADVENTURES}}"        
